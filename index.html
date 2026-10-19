@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girl Shop — Little Things for a Prettier Day</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">✨ Free shipping untuk pembelian di atas Rp300.000</div>
+  
+  <header class="site-header">
+    <a class="logo" href="index.html">Girl Shop <span>୨୧</span></a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#produk">Shop</a><a href="#cerita">Our Story</a><a href="#footer">Contact</a>
+    </nav>
+    <a class="cart-link" href="cart.html" aria-label="Buka keranjang">Bag <span id="cart-count" class="cart-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO GIRL SHOP</p>
+        <h1>Little things.<br><em>Pretty days.</em></h1>
+        <p class="hero-description">Find cute, aesthetic little things to make every day feel special. ♡</p>
+        <a class="button button-dark" href="#produk">Shop now <span>↗</span></a>
+      </div>
+      
+      <div class="hero-art hero-photo-art" aria-label="Girl Shop featured tote bag">
+        <img class="hero-tote-photo" src="assets/tote-bag.jpg" alt="Cream canvas tote bag from Girl Shop">
+        <div class="hero-photo-note">Carry your<br><em>pretty things</em> ♡</div>
+        <span class="hero-bow bow-one">୨୧</span>
+        <span class="hero-bow bow-two">✧</span>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✳</span><p>Picked with love</p></div>
+      <div><span>↗</span><p>Easy checkout</p></div>
+      <div><span>♡</span><p>Cute everyday finds</p></div>
+    </section>
+
+    <section id="produk" class="products-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">GIRL SHOP PICKS</p><h2>Best Sellers<span> ♡</span></h2></div>
+        <p>Little things for a prettier day.</p>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter produk">
+        <button class="filter active" data-filter="all">All items</button>
+        <button class="filter" data-filter="bags">Bags</button>
+        <button class="filter" data-filter="accessories">Accessories</button>
+        <button class="filter" data-filter="home">Home</button>
+      </div>
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+    <section id="cerita" class="story">
+      <div class="story-mark">GS<span>୨୧</span></div>
+      <div><p class="eyebrow">OUR STORY</p><h2>Welcome to<br><em>Girl Shop.</em></h2></div>
+      <p>Girl Shop adalah tempat untuk menemukan barang-barang lucu dan aesthetic untuk menemani hari-harimu. Mulai dari tote bag, aksesori pita, hingga perlengkapan rumah, setiap produk dipilih agar hal sederhana terasa lebih spesial. ♡</p>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <a class="logo" href="index.html">Girl Shop <span>୨୧</span></a>
+    <p>Little Things for a Prettier Day ♡</p>
+    <small>© 2026 Girl Shop · </small>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
