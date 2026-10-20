@@ -1303,3 +1303,244 @@ h1 em,h2 em
     font-size:18px;
     letter-spacing:-3px;
 }
+
+.payment-page {
+  width: min(1180px, calc(100% - 64px));
+  margin: 64px auto 80px;
+  padding: 0;
+  color: #694a3f;
+}
+
+.payment-page .eyebrow {
+  margin-bottom: 14px;
+  color: #d8798b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.payment-page > h1 {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.payment-page > h1 span {
+  color: #df8295;
+}
+
+.payment-page > .cart-intro {
+  margin: 14px 0 36px;
+  color: #92776b;
+  font-size: 15px;
+}
+
+.payment-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.8fr);
+  align-items: start;
+  gap: 28px;
+}
+
+.payment-card,
+.payment-layout > .summary {
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid #f0dfd9;
+  border-radius: 5px;
+  background: #fffdfc;
+}
+
+.payment-card h2,
+.payment-layout > .summary h2 {
+  margin: 0 0 12px;
+  color: #694a3f;
+  font-size: 24px;
+}
+
+.payment-card > p:not(.eyebrow) {
+  color: #92776b;
+  font-size: 14px;
+}
+
+/* Pilihan bank */
+
+.bank-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0 30px;
+}
+
+.bank-option {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #eadbd5;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.bank-option:has(input:checked) {
+  border: 1.5px solid #cb7185;
+  background: #fff3f3;
+}
+
+.bank-option input {
+  accent-color: #cb7185;
+  flex-shrink: 0;
+}
+
+.bank-option span {
+  color: #9a8075;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.bank-option strong {
+  color: #694a3f;
+  font-size: 16px;
+}
+
+.va-box {
+  margin: 0 0 30px;
+  padding: 25px;
+  border: 1px solid #f0dfd9;
+  border-radius: 5px;
+  background: #fff4f1;
+}
+
+.va-box .eyebrow {
+  margin: 0 0 12px;
+}
+
+.va-box h2 {
+  margin: 0 0 20px;
+  overflow-wrap: anywhere;
+  font-size: clamp(22px, 3vw, 30px);
+  letter-spacing: 1px;
+}
+
+.payment-card .button {
+  min-height: 48px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 3px;
+  background: #c96f83;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.payment-card .button:hover {
+  background: #b95e73;
+}
+
+/* Petunjuk pembayaran */
+
+.payment-card h3 {
+  margin: 0 0 14px;
+  font-size: 19px;
+}
+
+.payment-steps {
+  margin: 0 0 26px;
+  padding-left: 22px;
+  color: #80675c;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.payment-card .checkout-button {
+  display: block;
+  width: 100%;
+  min-height: 54px;
+  margin: 20px 0;
+}
+
+#payment-status {
+  padding: 0;
+  color: #80675c;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Ringkasan pesanan */
+
+.payment-layout > .summary {
+  background: #fff4f1;
+}
+
+.payment-layout > .summary .summary-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 17px 0;
+  border-bottom: 1px solid #eadbd5;
+  font-size: 14px;
+}
+
+.payment-layout > .summary .summary-line strong {
+  text-align: right;
+}
+
+.payment-layout > .summary .summary-line.total {
+  border-bottom: none;
+  font-size: 16px;
+}
+
+.payment-layout > .summary .secure-note {
+  margin-top: 20px;
+  color: #92776b;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.payment-card .continue-shopping {
+  display: inline-block;
+  margin-top: 12px;
+  color: #80675c;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .payment-page {
+    width: calc(100% - 36px);
+    margin: 40px auto 56px;
+  }
+
+  .payment-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .payment-card,
+  .payment-layout > .summary {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .payment-page {
+    width: calc(100% - 28px);
+  }
+
+  .bank-options {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-card,
+  .payment-layout > .summary {
+    padding: 18px;
+  }
+}
+
