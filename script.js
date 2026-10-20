@@ -400,6 +400,7 @@ function aktifkanFilter() {
     }
 }
 
+
 function aktifkanCheckout() {
     const tombolCheckout = document.getElementById("checkout-btn");
 
@@ -410,11 +411,12 @@ function aktifkanCheckout() {
             if (cart.length === 0) {
                 showMessage("Bag kamu masih kosong.");
             } else {
-                showMessage("Checkout ini masih demo dan belum memakai pembayaran sungguhan ♡");
+                window.location.href = "payment.html";
             }
         });
     }
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     updateCartCount();

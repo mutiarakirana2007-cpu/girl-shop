@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -10,36 +11,75 @@
 </head>
 
 <body>
-  <div class="announcement">✨ Free shipping untuk pembelian di atas Rp300.000</div>
+  <div class="announcement">
+    ✨ Free shipping untuk pembelian di atas Rp300.000
+  </div>
 
   <header class="site-header">
     <a class="logo" href="index.html">Girl Shop <span>୨୧</span></a>
-    <nav class="nav-links" aria-label="Navigasi utama"><a href="index.html#produk">Shop</a><a href="index.html#cerita">Our Story</a></nav>
-    <a class="cart-link" href="cart.html">Bag <span id="cart-count" class="cart-count">0</span></a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="index.html#produk">Shop</a>
+      <a href="index.html#cerita">Our Story</a>
+    </nav>
+    <a class="cart-link" href="cart.html">
+      Bag <span id="cart-count" class="cart-count">0</span>
+    </a>
   </header>
 
   <main class="cart-page">
     <p class="eyebrow">YOUR SELECTION</p>
     <h1>Your bag<span> ♡</span></h1>
     <p class="cart-intro">A few good things, all in one place.</p>
-    
+
     <div class="cart-layout">
-      <section id="cart-items" class="cart-items" aria-live="polite"></section>
+      <section
+        id="cart-items"
+        class="cart-items"
+        aria-live="polite">
+      </section>
+
       <aside class="summary">
         <h2>Order summary</h2>
-        <div class="summary-line"><span>Subtotal</span><strong id="subtotal">Rp0</strong></div>
-        <div class="summary-line"><span>Shipping</span><span id="shipping">Dihitung saat checkout</span></div>
-        <div class="summary-line total"><span>Total sementara</span><strong id="total">Rp0</strong></div>
-        <button id="checkout-btn" class="button button-dark checkout-button">Continue to checkout ↗</button>
-        <p class="secure-note">♡ Checkout demo · Belum ada pembayaran sungguhan</p>
-        <a class="continue-shopping" href="index.html#produk">← Continue shopping</a>
+
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <strong id="subtotal">Rp0</strong>
+        </div>
+
+        <div class="summary-line">
+          <span>Shipping</span>
+          <span id="shipping">Dihitung saat checkout</span>
+        </div>
+
+        <div class="summary-line total">
+          <span>Total pembayaran</span>
+          <strong id="total">Rp0</strong>
+        </div>
+
+        <button
+          id="checkout-btn"
+          class="button button-dark checkout-button"
+          type="button">
+          Continue to payment ↗
+        </button>
+
+        <p class="secure-note">
+          ♡ Pilih metode pembayaran Virtual Account pada halaman berikutnya.
+        </p>
+
+        <a class="continue-shopping" href="index.html#produk">
+          ← Continue shopping
+        </a>
       </aside>
     </div>
   </main>
-  
+
   <footer id="footer" class="site-footer">
-    <a class="logo" href="index.html">Girl Shop <span>୨୧</span></a><p>Little Things for a Prettier Day ♡</p><small>© 2026 Girl Shop ·</small>
+    <a class="logo" href="index.html">Girl Shop <span>୨୧</span></a>
+    <p>Little Things for a Prettier Day ♡</p>
+    <small>© 2026 Girl Shop</small>
   </footer>
+
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
